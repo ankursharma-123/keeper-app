@@ -11,6 +11,7 @@ function Note(props) {
       <button onClick={handleClick}>
         <DeleteIcon />
       </button>
+      {localStorage.setItem(props.title, props.content)}
     </div>
   );
 }
